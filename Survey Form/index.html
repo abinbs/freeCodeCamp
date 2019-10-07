@@ -1,0 +1,85 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html>
+  <header>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <<link rel="stylesheet" href="styles.css">
+  </header>
+  <body>
+    <main id="main">
+      <h1 id="title">Survey Form</h1>
+      <div id="inner">
+        <p id="description">Let me know how to improve P2P Learning</p>
+        <form id="survey-form">
+          <div id="row">
+            <div id="labels">
+              <label for="name" id="name-label">*Name: </label>
+            </div>
+            <div id="input">
+              <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+          </div>
+        <div id="row">
+          <div id="labels">
+            <label for="email" id="email-label">*Email: </label>
+          </div>
+          <div id="input">
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+          <div id="row">
+            <div id="labels">
+              <label for="number" id="number-label">*Age:</label>
+            </div>
+            <div id="input">
+              <input type="number" id="number" placeholder="Enter your age" required min=1 max=100>
+            </div>
+          </div>
+          <div id="row">
+            <div id="labels">
+              <label for="dropdown">Which option describes you in coding: </label>
+            </div>
+            <div id="input">
+              <select name="dropdown" id="dropdown">
+                <option value="Beginner" selected>Beginner</option>
+                <option value="Intermediate" >Intermediate</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+            </div>
+          </div>
+          <div id="row">
+            <div id="labels">
+              <label for="radio">How likely would you recommend P2P to your friend:</label>
+            </div>
+            <div id="input">
+              <ul type="none"><li>
+                  <input type="radio" id="radio1"  value=1 checked name="choice"><label>Very likely</label></li><li>
+                  <input type="radio" id="radio2" value=2 name="choice"><label>Somewhat likely</label>
+                </li><li>     <input type="radio" value=3 id="radio3" name="choice"><label>Not likely</label></li></ul>
+            </div>
+          </div>
+          <div id="row">
+            <div id="labels">
+              <label for="checkboxes">What do you expect: </label>
+            </div>
+            <div id="input">
+              <ul type="none">
+                <li><input type="checkbox" value="problems"><label>Practice Problems</label></li>
+                <li><input type="checkbox" value="Mentor"><label>Mentoring</label></li><li><input type="checkbox" value="Learn new"><label>Learn new things</label></li>
+                <li><input type="checkbox" value="Meetup"><label>Meetups</label></li></ul>
+            </div>
+          </div>
+          <div id="row">
+            <div id="labels">
+              <label for="textarea">Suggestions: </label>
+            </div>
+            <div id="input">
+              <textarea id="comment" placeholder="Enter your suggestions"></textarea>
+            </div>
+          </div>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
